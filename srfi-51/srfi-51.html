@@ -60,7 +60,7 @@
   conditions.</p>
   <h1>Specification</h1>
   <dl>
-    <dt><code>(rest-values [&lt;caller&gt;] &lt;rest-list&gt;
+    <dt><code class="proc def">(rest-values [&lt;caller&gt;] &lt;rest-list&gt;
     [&lt;args-number-limit&gt; &lt;default&gt; ...])</code></dt>
     <dd><code>&lt;caller&gt;</code> is any scheme expression.</dd>
     <dd><code>&lt;args-number-limit&gt;</code> should be an
@@ -129,23 +129,23 @@
         </li>
       </ol>
       <dl>
-        <dt><code>(arg-and [&lt;caller&gt;] &lt;variable&gt;
+        <dt><code class="syntax def">(arg-and [&lt;caller&gt;] &lt;variable&gt;
         &lt;expr&gt; ...)</code> (syntax)</dt>
-        <dt><code>(arg-ands [common &lt;caller&gt;]
+        <dt><code class="syntax def">(arg-ands [common &lt;caller&gt;]
         ([&lt;caller&gt;] &lt;variable&gt; &lt;expr&gt; ...)
         ...)</code> (syntax)</dt>
-        <dt><code>(err-and &lt;caller&gt; &lt;expression&gt;
+        <dt><code class="syntax def">(err-and &lt;caller&gt; &lt;expression&gt;
         ...)</code> (syntax)</dt>
-        <dt><code>(err-ands (&lt;caller&gt; &lt;expression&gt; ...)
+        <dt><code class="syntax def">(err-ands (&lt;caller&gt; &lt;expression&gt; ...)
         ...)</code> (syntax)</dt>
-        <dt><code>(arg-or [&lt;caller&gt;] &lt;variable&gt;
+        <dt><code class="syntax def">(arg-or [&lt;caller&gt;] &lt;variable&gt;
         &lt;expr&gt; ...)</code> (syntax)</dt>
-        <dt><code>(arg-ors [common &lt;caller&gt;]
+        <dt><code class="syntax def">(arg-ors [common &lt;caller&gt;]
         ([&lt;caller&gt;] &lt;variable&gt; &lt;expr&gt; ...)
         ...)</code> (syntax)</dt>
-        <dt><code>(err-or &lt;caller&gt; &lt;expression&gt;
+        <dt><code class="syntax def">(err-or &lt;caller&gt; &lt;expression&gt;
         ...)</code> (syntax)</dt>
-        <dt><code>(err-ors (&lt;caller&gt; &lt;expression&gt; ...)
+        <dt><code class="syntax def">(err-ors (&lt;caller&gt; &lt;expression&gt; ...)
         ...)</code> (syntax)</dt>
         <dd>Each <code>&lt;variable&gt;</code> should be an
         argument of a procedure.</dd>
