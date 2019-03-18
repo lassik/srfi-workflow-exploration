@@ -813,7 +813,7 @@ memq memv assq assv
     <!--
 ==== cons
 ============================================================================-->
-    <dt class="proc-def"><a name="cons"></a> <code class=
+    <dt class="proc-def proc def"><a name="cons"></a> <code class=
     "proc-def">cons</code> <var>a d -&gt; pair</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
@@ -831,7 +831,7 @@ memq memv assq assv
 ==== list
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="list"></a> <code class=
+    <dt class="proc-def proc def"><a name="list"></a> <code class=
     "proc-def">list</code> <var>object ... -&gt; list</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
@@ -844,7 +844,7 @@ memq memv assq assv
 ==== xcons
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="xcons"></a> <code class=
+    <dt class="proc-def proc def"><a name="xcons"></a> <code class=
     "proc-def">xcons</code> <var>d a -&gt; pair</var></dt>
     <dd class="proc-def">
       <pre>
@@ -856,11 +856,11 @@ higher-order procedures.
 </pre>The name stands for "eXchanged CONS." <!--
 ==== cons*
 ============================================================================-->
-      <a name="cons*"></a>
+       <a name="cons*"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">cons*</code>
-    <var>elt<sub>1</sub> elt<sub>2</sub> ... -&gt;
-    object</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">cons*</code> <var>elt<sub>1</sub> elt<sub>2</sub>
+    ... -&gt; object</var></dt>
     <dd class="proc-def">
       Like <code>list</code>, but the last argument provides the
       tail of the constructed list, returning
@@ -879,8 +879,8 @@ higher-order procedures.
 ============================================================================-->
       <a name="make-list"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">make-list</code>
-    <var>n [fill] -&gt; list</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">make-list</code> <var>n [fill] -&gt; list</var></dt>
     <dd class="proc-def">
       Returns an <var>n</var>-element list, whose elements are all
       the value <var>fill</var>. If the <var>fill</var> argument is
@@ -892,7 +892,7 @@ higher-order procedures.
 ============================================================================-->
       <a name="list-tabulate"></a>
     </dd>
-    <dt class="proc-def"><code class=
+    <dt class="proc-def proc def"><code class=
     "proc-def">list-tabulate</code> <var>n init-proc -&gt;
     list</var></dt>
     <dd class="proc-def">
@@ -908,13 +908,13 @@ higher-order procedures.
 ============================================================================-->
       <a name="list-copy"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">list-copy</code>
-    <var>flist -&gt; flist</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">list-copy</code> <var>flist -&gt; flist</var></dt>
     <dd class="proc-def">Copies the spine of the argument. <!--
 ==== circular-list
 ============================================================================-->
-    <a name="circular-list"></a></dd>
-    <dt class="proc-def"><code class=
+     <a name="circular-list"></a></dd>
+    <dt class="proc-def proc def"><code class=
     "proc-def">circular-list</code> <var>elt<sub>1</sub>
     elt<sub>2</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
@@ -926,8 +926,9 @@ higher-order procedures.
 ============================================================================-->
       <a name="iota"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">iota</code>
-    <var>count [start step] -&gt; list</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">iota</code> <var>count [start step] -&gt;
+    list</var></dt>
     <dd class="proc-def">
       Returns a list containing the elements
       <pre class="code-example">
@@ -950,8 +951,9 @@ APL primitive.
     <!--
 ==== proper-list?
 ============================================================================-->
-    <dt class="proc-def"><code class="proc-def">proper-list?</code>
-    <var>x -&gt; boolean</var> <a name="proper-list-p"></a></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">proper-list?</code> <var>x -&gt; boolean</var>
+    <a name="proper-list-p"></a></dt>
     <dd class="proc-def">
       Returns true iff <var>x</var> is a proper list -- a finite,
       nil-terminated list.
@@ -976,7 +978,7 @@ function is required to detect this case and return false.
 ============================================================================-->
       <a name="circular-list-p"></a>
     </dd>
-    <dt class="proc-def"><code class=
+    <dt class="proc-def proc def"><code class=
     "proc-def">circular-list?</code> <var>x -&gt;
     boolean</var></dt>
     <dd class="proc-def">
@@ -991,8 +993,8 @@ function is required to detect this case and return false.
 ============================================================================-->
       <a name="dotted-list-p"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">dotted-list?</code>
-    <var>x -&gt; boolean</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">dotted-list?</code> <var>x -&gt; boolean</var></dt>
     <dd class="proc-def">
       True if <var>x</var> is a finite, non-nil-terminated list.
       That is, there exists an <var>n</var> &gt;= 0 such that
@@ -1007,8 +1009,8 @@ function is required to detect this case and return false.
 ============================================================================-->
       <a name="pair-p"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">pair?</code>
-    <var>object -&gt; boolean</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">pair?</code> <var>object -&gt; boolean</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>] Returns #t if <var>object</var> is a
@@ -1025,17 +1027,17 @@ function is required to detect this case and return false.
 ============================================================================-->
       <a name="null-p"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">null?</code>
-    <var>object -&gt; boolean</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">null?</code> <var>object -&gt; boolean</var></dt>
     <dd class="proc-def">[<abbr title=
     "Revised^5 Report on Scheme"><a href="#R5RS">R5RS</a></abbr>]
     Returns #t if <var>object</var> is the empty list; otherwise,
     #f. <!--
 ==== null-list?
 ============================================================================-->
-    <a name="null-list-p"></a></dd>
-    <dt class="proc-def"><code class="proc-def">null-list?</code>
-    <var>list -&gt; boolean</var></dt>
+     <a name="null-list-p"></a></dd>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">null-list?</code> <var>list -&gt; boolean</var></dt>
     <dd class="proc-def"><var>List</var> is a proper or circular
     list. This procedure returns true if the argument is the empty
     list (), and false otherwise. It is an error to pass this
@@ -1045,8 +1047,9 @@ function is required to detect this case and return false.
     lists. <!--
 ==== not-pair?
 ============================================================================--></dd>
-    <dt class="proc-def"><a name="not-pair-p"></a> <code class=
-    "proc-def">not-pair?</code> <var>x -&gt; boolean</var></dt>
+    <dt class="proc-def proc def"><a name="not-pair-p"></a>
+    <code class="proc-def">not-pair?</code> <var>x -&gt;
+    boolean</var></dt>
     <dd class="proc-def">
       <pre>(lambda (x) (not (pair? x)))</pre>Provided as a
       procedure as it can be useful as the termination condition
@@ -1055,7 +1058,7 @@ function is required to detect this case and return false.
 ==== list=
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="list="></a> <code class=
+    <dt class="proc-def proc def"><a name="list="></a> <code class=
     "proc-def">list=</code> <var>elt= list<sub>1</sub> ... -&gt;
     boolean</var></dt>
     <dd class="proc-def">
@@ -1113,10 +1116,10 @@ function is required to detect this case and return false.
 ==== car cdr
 ============================================================================-->
     <dd><a name="car"></a> <a name="cdr"></a></dd>
-    <dt class="proc-def1"><code class="proc-def">car</code>
-    <var>pair -&gt; value</var></dt>
-    <dt class="proc-defn"><code class="proc-def">cdr</code>
-    <var>pair -&gt; value</var></dt>
+    <dt class="proc-def1 proc def"><code class=
+    "proc-def">car</code> <var>pair -&gt; value</var></dt>
+    <dt class="proc-defn proc def"><code class=
+    "proc-def">cdr</code> <var>pair -&gt; value</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>] These functions return the contents
@@ -1133,15 +1136,15 @@ function is required to detect this case and return false.
       <a name="caar"></a> <a name="cadr"></a> <a name="cdddar"></a>
       <a name="cddddr"></a>
     </dd>
-    <dt class="proc-def1"><code class="proc-def">caar</code>
-    <var>pair -&gt; value</var></dt>
-    <dt class="proc-defi"><code class="proc-def">cadr</code>
-    <var>pair -&gt; value</var></dt>
+    <dt class="proc-def1 proc def"><code class=
+    "proc-def">caar</code> <var>pair -&gt; value</var></dt>
+    <dt class="proc-defi proc def"><code class=
+    "proc-def">cadr</code> <var>pair -&gt; value</var></dt>
     <dt class="proc-defi"><code class="proc-def">:</code></dt>
-    <dt class="proc-defi"><code class="proc-def">cdddar</code>
-    <var>pair -&gt; value</var></dt>
-    <dt class="proc-defn"><code class="proc-def">cddddr</code>
-    <var>pair -&gt; value</var></dt>
+    <dt class="proc-defi proc def"><code class=
+    "proc-def">cdddar</code> <var>pair -&gt; value</var></dt>
+    <dt class="proc-defn proc def"><code class=
+    "proc-def">cddddr</code> <var>pair -&gt; value</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>] These procedures are compositions of
@@ -1153,10 +1156,10 @@ function is required to detect this case and return false.
 are twenty-eight of these procedures in all. <!--
 ==== list-ref
 ============================================================================-->
-      <a name="list-ref"></a>
+       <a name="list-ref"></a>
     </dd>
-    <dt class="proc-def"><code class="proc-def">list-ref</code>
-    <var>clist i -&gt; value</var></dt>
+    <dt class="proc-def proc def"><code class=
+    "proc-def">list-ref</code> <var>clist i -&gt; value</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>] Returns the
@@ -1180,36 +1183,36 @@ are twenty-eight of these procedures in all. <!--
 ==== first
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="first"></a> <code class=
-    "proc-def">first&nbsp;&nbsp;&nbsp;</code><var>pair -&gt;
+    <dt class="proc-def1 proc def"><a name="first"></a>
+    <code class="proc-def">first&nbsp;&nbsp;&nbsp;</code><var>pair
+    -&gt; object</var></dt>
+    <dt class="proc-defi proc def"><a name="second"></a>
+    <code class="proc-def">second&nbsp;&nbsp;</code><var>pair -&gt;
     object</var></dt>
-    <dt class="proc-defi"><a name="second"></a> <code class=
-    "proc-def">second&nbsp;&nbsp;</code><var>pair -&gt;
+    <dt class="proc-defi proc def"><a name="third"></a>
+    <code class="proc-def">third&nbsp;&nbsp;&nbsp;</code><var>pair
+    -&gt; object</var></dt>
+    <dt class="proc-defi proc def"><a name="fourth"></a>
+    <code class="proc-def">fourth&nbsp;&nbsp;</code><var>pair -&gt;
     object</var></dt>
-    <dt class="proc-defi"><a name="third"></a> <code class=
-    "proc-def">third&nbsp;&nbsp;&nbsp;</code><var>pair -&gt;
+    <dt class="proc-defi proc def"><a name="fifth"></a>
+    <code class="proc-def">fifth&nbsp;&nbsp;&nbsp;</code><var>pair
+    -&gt; object</var></dt>
+    <dt class="proc-defi proc def"><a name="sixth"></a>
+    <code class="proc-def">sixth&nbsp;&nbsp;&nbsp;</code><var>pair
+    -&gt; object</var></dt>
+    <dt class="proc-defi proc def"><a name="seventh"></a>
+    <code class="proc-def">seventh&nbsp;</code><var>pair -&gt;
     object</var></dt>
-    <dt class="proc-defi"><a name="fourth"></a> <code class=
-    "proc-def">fourth&nbsp;&nbsp;</code><var>pair -&gt;
+    <dt class="proc-defi proc def"><a name="eighth"></a>
+    <code class="proc-def">eighth&nbsp;&nbsp;</code><var>pair -&gt;
     object</var></dt>
-    <dt class="proc-defi"><a name="fifth"></a> <code class=
-    "proc-def">fifth&nbsp;&nbsp;&nbsp;</code><var>pair -&gt;
-    object</var></dt>
-    <dt class="proc-defi"><a name="sixth"></a> <code class=
-    "proc-def">sixth&nbsp;&nbsp;&nbsp;</code><var>pair -&gt;
-    object</var></dt>
-    <dt class="proc-defi"><a name="seventh"></a> <code class=
-    "proc-def">seventh&nbsp;</code><var>pair -&gt;
-    object</var></dt>
-    <dt class="proc-defi"><a name="eighth"></a> <code class=
-    "proc-def">eighth&nbsp;&nbsp;</code><var>pair -&gt;
-    object</var></dt>
-    <dt class="proc-defi"><a name="ninth"></a> <code class=
-    "proc-def">ninth&nbsp;&nbsp;&nbsp;</code><var>pair -&gt;
-    object</var></dt>
-    <dt class="proc-defn"><a name="tenth"></a> <code class=
-    "proc-def">tenth&nbsp;&nbsp;&nbsp;</code><var>pair -&gt;
-    object</var></dt>
+    <dt class="proc-defi proc def"><a name="ninth"></a>
+    <code class="proc-def">ninth&nbsp;&nbsp;&nbsp;</code><var>pair
+    -&gt; object</var></dt>
+    <dt class="proc-defn proc def"><a name="tenth"></a>
+    <code class="proc-def">tenth&nbsp;&nbsp;&nbsp;</code><var>pair
+    -&gt; object</var></dt>
     <dd class="proc-def">
       Synonyms for <code>car</code>, <code>cadr</code>,
       <code>caddr</code>, ...
@@ -1219,8 +1222,9 @@ are twenty-eight of these procedures in all. <!--
 ==== car+cdr
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="car+cdr"></a> <code class=
-    "proc-def">car+cdr</code> <var>pair -&gt; [x y]</var></dt>
+    <dt class="proc-def proc def"><a name="car+cdr"></a>
+    <code class="proc-def">car+cdr</code> <var>pair -&gt; [x
+    y]</var></dt>
     <dd class="proc-def">
       The fundamental pair deconstructor:
       <pre class="code-example">
@@ -1231,9 +1235,9 @@ compiler. <!--
 ==== take
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="take"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="take"></a> <code class=
     "proc-def">take</code> <var>x i -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="drop"></a> <code class=
+    <dt class="proc-defn proc def"><a name="drop"></a> <code class=
     "proc-def">drop</code> <var>x i -&gt; object</var></dt>
     <dd class="proc-def">
       <code>take</code> returns the first <var>i</var> elements of
@@ -1266,11 +1270,12 @@ inverted with <code>append</code>:
 ==== take-right
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="take-right"></a> <code class=
-    "proc-def">take-right</code> <var>flist i -&gt;
+    <dt class="proc-def1 proc def"><a name="take-right"></a>
+    <code class="proc-def">take-right</code> <var>flist i -&gt;
     object</var></dt>
-    <dt class="proc-defn"><a name="drop-right"></a> <code class=
-    "proc-def">drop-right</code> <var>flist i -&gt; list</var></dt>
+    <dt class="proc-defn proc def"><a name="drop-right"></a>
+    <code class="proc-def">drop-right</code> <var>flist i -&gt;
+    list</var></dt>
     <dd class="proc-def">
       <code>take-right</code> returns the last <var>i</var>
       elements of <var>flist</var>.<br>
@@ -1302,10 +1307,11 @@ freshly-allocated list, even in the case where nothing is dropped,
 ==== take!
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="take!"></a> <code class=
-    "proc-def">take!</code> <var>x i -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="drop-right!"></a> <code class=
-    "proc-def">drop-right!</code> <var>flist i -&gt;
+    <dt class="proc-def1 proc def"><a name="take!"></a>
+    <code class="proc-def">take!</code> <var>x i -&gt;
+    list</var></dt>
+    <dt class="proc-defn proc def"><a name="drop-right!"></a>
+    <code class="proc-def">drop-right!</code> <var>flist i -&gt;
     list</var></dt>
     <dd class="proc-def">
       <code>take!</code> and <code>drop-right!</code> are
@@ -1322,11 +1328,11 @@ freshly-allocated list, even in the case where nothing is dropped,
 ==== split-at
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="split-at"></a> <code class=
-    "proc-def">split-at&nbsp;</code> <var>x i -&gt; [list
-    object]</var></dt>
-    <dt class="proc-defn"><a name="split-at!"></a> <code class=
-    "proc-def">split-at!</code> <var>x i -&gt; [list
+    <dt class="proc-def1 proc def"><a name="split-at"></a>
+    <code class="proc-def">split-at&nbsp;</code> <var>x i -&gt;
+    [list object]</var></dt>
+    <dt class="proc-defn proc def"><a name="split-at!"></a>
+    <code class="proc-def">split-at!</code> <var>x i -&gt; [list
     object]</var></dt>
     <dd class="proc-def">
       <code>split-at</code> splits the list <var>x</var> at index
@@ -1346,10 +1352,11 @@ the result.
 ==== last
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="last"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="last"></a> <code class=
     "proc-def">last</code> <var>pair -&gt; object</var></dt>
-    <dt class="proc-defn"><a name="last-pair"></a> <code class=
-    "proc-def">last-pair</code> <var>pair -&gt; pair</var></dt>
+    <dt class="proc-defn proc def"><a name="last-pair"></a>
+    <code class="proc-def">last-pair</code> <var>pair -&gt;
+    pair</var></dt>
     <dd class="proc-def">
       <code>last</code> returns the last element of the non-empty,
       finite list <var>pair</var>. <code>last-pair</code> returns
@@ -1368,12 +1375,12 @@ the result.
 ==== length+
 ==== length
 ============================================================================-->
-    <dt class="proc-def1"><a name="length"></a> <code class=
-    "proc-def">length&nbsp;&nbsp;</code><var>list -&gt;
+    <dt class="proc-def1 proc def"><a name="length"></a>
+    <code class="proc-def">length&nbsp;&nbsp;</code><var>list -&gt;
     integer</var></dt>
-    <dt class="proc-defn"><a name="length+"></a> <code class=
-    "proc-def">length+&nbsp;</code><var>clist -&gt; integer or
-    #f</var></dt>
+    <dt class="proc-defn proc def"><a name="length+"></a>
+    <code class="proc-def">length+&nbsp;</code><var>clist -&gt;
+    integer or #f</var></dt>
     <dd class="proc-def">
       Both <code>length</code> and <code>length+</code> return the
       length of the argument. It is an error to pass a value to
@@ -1389,12 +1396,12 @@ the result.
 ==== append append!
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def1"><a name="append"></a> <code class=
-    "proc-def">append&nbsp;</code> <var>list<sub>1</sub> ... -&gt;
-    list</var></dt>
-    <dt class="proc-defn"><a name="append!"></a> <code class=
-    "proc-def">append!</code> <var>list<sub>1</sub> ... -&gt;
-    list</var></dt>
+    <dt class="proc-def1 proc def"><a name="append"></a>
+    <code class="proc-def">append&nbsp;</code>
+    <var>list<sub>1</sub> ... -&gt; list</var></dt>
+    <dt class="proc-defn proc def"><a name="append!"></a>
+    <code class="proc-def">append!</code> <var>list<sub>1</sub> ...
+    -&gt; list</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>] <code>append</code> returns a list
@@ -1422,12 +1429,12 @@ be proper lists.
 ==== concatenate concatenate!
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="concatenate"></a> <code class=
-    "proc-def">concatenate&nbsp;</code> <var>list-of-lists -&gt;
-    value</var></dt>
-    <dt class="proc-defn"><a name="concatenate!"></a> <code class=
-    "proc-def">concatenate!</code> <var>list-of-lists -&gt;
-    value</var></dt>
+    <dt class="proc-def1 proc def"><a name="concatenate"></a>
+    <code class="proc-def">concatenate&nbsp;</code>
+    <var>list-of-lists -&gt; value</var></dt>
+    <dt class="proc-defn proc def"><a name="concatenate!"></a>
+    <code class="proc-def">concatenate!</code> <var>list-of-lists
+    -&gt; value</var></dt>
     <dd class="proc-def">
       These functions append the elements of their argument
       together. That is, <code>concatenate</code> returns
@@ -1450,10 +1457,12 @@ defined in terms of <code>append!</code> instead of
 ==== reverse reverse!
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def1"><a name="reverse"></a> <code class=
-    "proc-def">reverse&nbsp;</code> <var>list -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="reverse!"></a> <code class=
-    "proc-def">reverse!</code> <var>list -&gt; list</var></dt>
+    <dt class="proc-def1 proc def"><a name="reverse"></a>
+    <code class="proc-def">reverse&nbsp;</code> <var>list -&gt;
+    list</var></dt>
+    <dt class="proc-defn proc def"><a name="reverse!"></a>
+    <code class="proc-def">reverse!</code> <var>list -&gt;
+    list</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>] <code>reverse</code> returns a newly
@@ -1470,10 +1479,11 @@ defined in terms of <code>append!</code> instead of
 ==== append-reverse
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="append-reverse"></a>
-    <code class="proc-def">append-reverse&nbsp;&nbsp;</code><var>rev-head
-    tail -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="append-reverse!"></a>
+    <dt class="proc-def1 proc def"><a name="append-reverse"></a>
+    <code class=
+    "proc-def">append-reverse&nbsp;&nbsp;</code><var>rev-head tail
+    -&gt; list</var></dt>
+    <dt class="proc-defn proc def"><a name="append-reverse!"></a>
     <code class=
     "proc-def">append-reverse!&nbsp;</code><var>rev-head tail -&gt;
     list</var></dt>
@@ -1498,9 +1508,9 @@ defined in terms of <code>append!</code> instead of
       <!--
 ==== zip
 ============================================================================-->
-      <a name="zip"></a></p>
+       <a name="zip"></a></p>
     </dd>
-    <dt class="proc-def"><code class="proc-def">zip</code>
+    <dt class="proc-def proc def"><code class="proc-def">zip</code>
     <var>clist<sub>1</sub> clist<sub>2</sub> ... -&gt;
     list</var></dt>
     <dd class="proc-def">
@@ -1529,18 +1539,21 @@ corresponding elements from the parameter lists.
 ============================================================================-->
       <a name="unzip1"></a>
     </dd>
-    <dt class="proc-def1"><code class="proc-def">unzip1</code>
-    <var>list -&gt; list</var> <a name="unzip2"></a></dt>
-    <dt class="proc-defi"><code class="proc-def">unzip2</code>
-    <var>list -&gt; [list list]</var> <a name="unzip3"></a></dt>
-    <dt class="proc-defi"><code class="proc-def">unzip3</code>
-    <var>list -&gt; [list list list]</var> <a name=
-    "unzip4"></a></dt>
-    <dt class="proc-defi"><code class="proc-def">unzip4</code>
-    <var>list -&gt; [list list list list]</var> <a name=
-    "unzip5"></a></dt>
-    <dt class="proc-defn"><code class="proc-def">unzip5</code>
-    <var>list -&gt; [list list list list list]</var></dt>
+    <dt class="proc-def1 proc def"><code class=
+    "proc-def">unzip1</code> <var>list -&gt; list</var> <a name=
+    "unzip2"></a></dt>
+    <dt class="proc-defi proc def"><code class=
+    "proc-def">unzip2</code> <var>list -&gt; [list list]</var>
+    <a name="unzip3"></a></dt>
+    <dt class="proc-defi proc def"><code class=
+    "proc-def">unzip3</code> <var>list -&gt; [list list list]</var>
+    <a name="unzip4"></a></dt>
+    <dt class="proc-defi proc def"><code class=
+    "proc-def">unzip4</code> <var>list -&gt; [list list list
+    list]</var> <a name="unzip5"></a></dt>
+    <dt class="proc-defn proc def"><code class=
+    "proc-def">unzip5</code> <var>list -&gt; [list list list list
+    list]</var></dt>
     <dd class="proc-def">
       <code>unzip1</code> takes a list of lists, where every list
       must contain at least one element, and returns a list
@@ -1559,7 +1572,7 @@ corresponding elements from the parameter lists.
 ==== count
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="count"></a> <code class=
+    <dt class="proc-def proc def"><a name="count"></a> <code class=
     "proc-def">count</code> <var>pred clist<sub>1</sub>
     clist<sub>2</sub> -&gt; integer</var></dt>
     <dd class="proc-def">
@@ -1586,7 +1599,7 @@ corresponding elements from the parameter lists.
     <!--
 ==== fold
 ============================================================================-->
-    <dt class="proc-def"><a name="fold"></a> <code class=
+    <dt class="proc-def proc def"><a name="fold"></a> <code class=
     "proc-def">fold</code> <var>kons knil clist<sub>1</sub>
     clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
@@ -1631,9 +1644,9 @@ corresponding elements from the parameter lists.
 ==== fold-right
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="fold-right"></a> <code class=
-    "proc-def">fold-right</code> <var>kons knil clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; value</var></dt>
+    <dt class="proc-def proc def"><a name="fold-right"></a>
+    <code class="proc-def">fold-right</code> <var>kons knil
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
       The fundamental list recursion operator.
       <p>First, consider the single list-parameter case. If
@@ -1667,9 +1680,9 @@ corresponding elements from the parameter lists.
 ==== pair-fold
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="pair-fold"></a> <code class=
-    "proc-def">pair-fold</code> <var>kons knil clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; value</var></dt>
+    <dt class="proc-def proc def"><a name="pair-fold"></a>
+    <code class="proc-def">pair-fold</code> <var>kons knil
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
       Analogous to <code>fold</code>, but <var>kons</var> is
       applied to successive sublists of the lists, rather than
@@ -1690,7 +1703,7 @@ altering the sequence of execution.
 ==== pair-fold-right
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="pair-fold-right"></a>
+    <dt class="proc-def proc def"><a name="pair-fold-right"></a>
     <code class="proc-def">pair-fold-right</code> <var>kons knil
     clist<sub>1</sub> clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
@@ -1708,9 +1721,9 @@ altering the sequence of execution.
 ==== reduce
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="reduce"></a> <code class=
-    "proc-def">reduce</code> <var>f ridentity list -&gt;
-    value</var></dt>
+    <dt class="proc-def proc def"><a name="reduce"></a>
+    <code class="proc-def">reduce</code> <var>f ridentity list
+    -&gt; value</var></dt>
     <dd class="proc-def">
       <code>reduce</code> is a variant of <code>fold</code>.
       <p><var>ridentity</var> should be a "right identity" of the
@@ -1748,9 +1761,9 @@ altering the sequence of execution.
 ==== reduce-right
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="reduce-right"></a> <code class=
-    "proc-def">reduce-right</code> <var>f ridentity list -&gt;
-    value</var></dt>
+    <dt class="proc-def proc def"><a name="reduce-right"></a>
+    <code class="proc-def">reduce-right</code> <var>f ridentity
+    list -&gt; value</var></dt>
     <dd class="proc-def">
       <code>reduce-right</code> is the fold-right variant of
       <code>reduce</code>. It obeys the following definition:
@@ -1769,9 +1782,9 @@ altering the sequence of execution.
 ==== unfold
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="unfold"></a> <code class=
-    "proc-def">unfold</code> <var>p f g seed [tail-gen] -&gt;
-    list</var></dt>
+    <dt class="proc-def proc def"><a name="unfold"></a>
+    <code class="proc-def">unfold</code> <var>p f g seed [tail-gen]
+    -&gt; list</var></dt>
     <dd class="proc-def">
       <code>unfold</code> is best described by its basic recursion:
       <pre class="code-example">
@@ -1854,9 +1867,9 @@ inverses. That is, given operations <var>knull?</var>,
 ==== unfold-right
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="unfold-right"></a> <code class=
-    "proc-def">unfold-right</code> <var>p f g seed [tail] -&gt;
-    list</var></dt>
+    <dt class="proc-def proc def"><a name="unfold-right"></a>
+    <code class="proc-def">unfold-right</code> <var>p f g seed
+    [tail] -&gt; list</var></dt>
     <dd class="proc-def">
       <code>unfold-right</code> constructs a list with the
       following loop:
@@ -1935,7 +1948,7 @@ inverses. That is, given operations <var>knull?</var>,
 ==== map
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="map"></a> <code class=
+    <dt class="proc-def proc def"><a name="map"></a> <code class=
     "proc-def">map</code> <var>proc clist<sub>1</sub>
     clist<sub>2</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
@@ -1972,9 +1985,10 @@ terminates when the shortest list runs out.
 ==== for-each
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="for-each"></a> <code class=
-    "proc-def">for-each</code> <var>proc clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; unspecified</var></dt>
+    <dt class="proc-def proc def"><a name="for-each"></a>
+    <code class="proc-def">for-each</code> <var>proc
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt;
+    unspecified</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
       "#R5RS">R5RS</a></abbr>+] The arguments to
@@ -2000,12 +2014,12 @@ terminates when the shortest list runs out.
 ==== append-map
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def1"><a name="append-map"></a> <code class=
-    "proc-def">append-map&nbsp;&nbsp;</code><var>f
+    <dt class="proc-def1 proc def"><a name="append-map"></a>
+    <code class="proc-def">append-map&nbsp;&nbsp;</code><var>f
     clist<sub>1</sub> clist<sub>2</sub> ... -&gt; value</var></dt>
-    <dt class="proc-defn"><a name="append-map!"></a> <code class=
-    "proc-def">append-map!&nbsp;</code><var>f clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; value</var></dt>
+    <dt class="proc-defn proc def"><a name="append-map!"></a>
+    <code class="proc-def">append-map!&nbsp;</code><var>f
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
       Equivalent to
       <div class="indent">
@@ -2033,7 +2047,7 @@ terminates when the shortest list runs out.
 ==== map!
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="map!"></a> <code class=
+    <dt class="proc-def proc def"><a name="map!"></a> <code class=
     "proc-def">map!</code> <var>f list<sub>1</sub>
     clist<sub>2</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
@@ -2049,8 +2063,8 @@ terminates when the shortest list runs out.
 ==== map-in-order
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def"><a name="map-in-order"></a> <code class=
-    "proc-def">map-in-order</code> <var>f</var>
+    <dt class="proc-def proc def"><a name="map-in-order"></a>
+    <code class="proc-def">map-in-order</code> <var>f</var>
     <var>clist<sub>1</sub> clist<sub>2</sub> ... -&gt;
     list</var></dt>
     <dd class="proc-def">
@@ -2063,9 +2077,10 @@ terminates when the shortest list runs out.
 ==== pair-for-each
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def"><a name="pair-for-each"></a> <code class=
-    "proc-def">pair-for-each</code> <var>f clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; unspecific</var></dt>
+    <dt class="proc-def proc def"><a name="pair-for-each"></a>
+    <code class="proc-def">pair-for-each</code> <var>f
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt;
+    unspecific</var></dt>
     <dd class="proc-def">
       Like <code>for-each</code>, but <var>f</var> is applied to
       successive sublists of the argument lists. That is,
@@ -2084,9 +2099,9 @@ terminates when the shortest list runs out.
 ==== filter-map
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="filter-map"></a> <code class=
-    "proc-def">filter-map</code> <var>f clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; list</var></dt>
+    <dt class="proc-def proc def"><a name="filter-map"></a>
+    <code class="proc-def">filter-map</code> <var>f
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
       Like <code>map</code>, but only true values are saved.
       <pre class="code-example">
@@ -2104,8 +2119,9 @@ terminates when the shortest list runs out.
     <!--
 ==== filter
 ============================================================================-->
-    <dt class="proc-def"><a name="filter"></a> <code class=
-    "proc-def">filter</code> <var>pred list -&gt; list</var></dt>
+    <dt class="proc-def proc def"><a name="filter"></a>
+    <code class="proc-def">filter</code> <var>pred list -&gt;
+    list</var></dt>
     <dd class="proc-def">
       Return all the elements of <var>list</var> that satisfy
       predicate <var>pred</var>. The list is not disordered --
@@ -2120,9 +2136,9 @@ terminates when the shortest list runs out.
 ==== partition
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="partition"></a> <code class=
-    "proc-def">partition</code> <var>pred list -&gt; [list
-    list]</var></dt>
+    <dt class="proc-def proc def"><a name="partition"></a>
+    <code class="proc-def">partition</code> <var>pred list -&gt;
+    [list list]</var></dt>
     <dd class="proc-def">
       Partitions the elements of <var>list</var> with predicate
       <var>pred</var>, and returns two values: the list of
@@ -2140,8 +2156,9 @@ terminates when the shortest list runs out.
 ==== remove
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="remove"></a> <code class=
-    "proc-def">remove</code> <var>pred list -&gt; list</var></dt>
+    <dt class="proc-def proc def"><a name="remove"></a>
+    <code class="proc-def">remove</code> <var>pred list -&gt;
+    list</var></dt>
     <dd class="proc-def">
       Returns <var>list</var> without the elements that satisfy
       predicate <var>pred</var>:
@@ -2160,13 +2177,15 @@ list. The dynamic order in which the various applications of <var>
 ==== filter!
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="filter!"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="filter!"></a>
+    <code class=
     "proc-def">filter!&nbsp;&nbsp;&nbsp;&nbsp;</code><var>pred list
     -&gt; list</var></dt>
-    <dt class="proc-defi"><a name="partition!"></a> <code class=
-    "proc-def">partition!&nbsp;</code><var>pred list -&gt; [list
-    list]</var></dt>
-    <dt class="proc-defn"><a name="remove!"></a> <code class=
+    <dt class="proc-defi proc def"><a name="partition!"></a>
+    <code class="proc-def">partition!&nbsp;</code><var>pred list
+    -&gt; [list list]</var></dt>
+    <dt class="proc-defn proc def"><a name="remove!"></a>
+    <code class=
     "proc-def">remove!&nbsp;&nbsp;&nbsp;&nbsp;</code><var>pred list
     -&gt; list</var></dt>
     <dd class="proc-def">Linear-update variants of
@@ -2248,7 +2267,7 @@ list. The dynamic order in which the various applications of <var>
     <!--
 ==== find
 ============================================================================-->
-    <dt class="proc-def"><a name="find"></a> <code class=
+    <dt class="proc-def proc def"><a name="find"></a> <code class=
     "proc-def">find</code> <var>pred clist -&gt; value</var></dt>
     <dd class="proc-def">
       Return the first element of <var>clist</var> that satisfies
@@ -2272,9 +2291,9 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== find-tail
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="find-tail"></a> <code class=
-    "proc-def">find-tail</code> <var>pred clist -&gt; pair or
-    false</var></dt>
+    <dt class="proc-def proc def"><a name="find-tail"></a>
+    <code class="proc-def">find-tail</code> <var>pred clist -&gt;
+    pair or false</var></dt>
     <dd class="proc-def">
       Return the first pair of <var>clist</var> whose car satisfies
       <var>pred</var>. If no pair does, return false.
@@ -2298,11 +2317,11 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== take-while take-while!
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def1"><a name="take-while"></a> <code class=
-    "proc-def">take-while&nbsp;</code> <var>pred clist -&gt;
-    list</var></dt>
-    <dt class="proc-defn"><a name="take-while!"></a> <code class=
-    "proc-def">take-while!</code> <var>pred clist -&gt;
+    <dt class="proc-def1 proc def"><a name="take-while"></a>
+    <code class="proc-def">take-while&nbsp;</code> <var>pred clist
+    -&gt; list</var></dt>
+    <dt class="proc-defn proc def"><a name="take-while!"></a>
+    <code class="proc-def">take-while!</code> <var>pred clist -&gt;
     list</var></dt>
     <dd class="proc-def">
       Returns the longest initial prefix of <var>clist</var> whose
@@ -2316,8 +2335,8 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== drop-while
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="drop-while"></a> <code class=
-    "proc-def">drop-while</code> <var>pred clist -&gt;
+    <dt class="proc-def proc def"><a name="drop-while"></a>
+    <code class="proc-def">drop-while</code> <var>pred clist -&gt;
     list</var></dt>
     <dd class="proc-def">
       Drops the longest initial prefix of <var>clist</var> whose
@@ -2330,18 +2349,18 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== span span! break break!
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="span"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="span"></a> <code class=
     "proc-def">span&nbsp;&nbsp;</code> <var>pred clist -&gt; [list
     clist]</var></dt>
-    <dt class="proc-defi"><a name="span!"></a> <code class=
-    "proc-def">span!&nbsp;</code> <var>pred list&nbsp; -&gt; [list
-    list]</var></dt>
-    <dt class="proc-defi"><a name="break"></a> <code class=
-    "proc-def">break&nbsp;</code> <var>pred clist -&gt; [list
-    clist]</var></dt>
-    <dt class="proc-defn"><a name="break!"></a> <code class=
-    "proc-def">break!</code> <var>pred list&nbsp; -&gt; [list
-    list]</var></dt>
+    <dt class="proc-defi proc def"><a name="span!"></a>
+    <code class="proc-def">span!&nbsp;</code> <var>pred list&nbsp;
+    -&gt; [list list]</var></dt>
+    <dt class="proc-defi proc def"><a name="break"></a>
+    <code class="proc-def">break&nbsp;</code> <var>pred clist -&gt;
+    [list clist]</var></dt>
+    <dt class="proc-defn proc def"><a name="break!"></a>
+    <code class="proc-def">break!</code> <var>pred list&nbsp; -&gt;
+    [list list]</var></dt>
     <dd class="proc-def">
       <code>Span</code> splits the list into the longest initial
       prefix whose elements all satisfy <var>pred</var>, and the
@@ -2372,7 +2391,7 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== any
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="any"></a> <code class=
+    <dt class="proc-def proc def"><a name="any"></a> <code class=
     "proc-def">any</code> <var>pred clist<sub>1</sub>
     clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
@@ -2413,7 +2432,7 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== every
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="every"></a> <code class=
+    <dt class="proc-def proc def"><a name="every"></a> <code class=
     "proc-def">every</code> <var>pred clist<sub>1</sub>
     clist<sub>2</sub> ... -&gt; value</var></dt>
     <dd class="proc-def">
@@ -2448,9 +2467,10 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== list-index
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def"><a name="list-index"></a> <code class=
-    "proc-def">list-index</code> <var>pred clist<sub>1</sub>
-    clist<sub>2</sub> ... -&gt; integer or false</var></dt>
+    <dt class="proc-def proc def"><a name="list-index"></a>
+    <code class="proc-def">list-index</code> <var>pred
+    clist<sub>1</sub> clist<sub>2</sub> ... -&gt; integer or
+    false</var></dt>
     <dd class="proc-def">
       Return the index of the leftmost element that satisfies
       <var>pred</var>.
@@ -2481,11 +2501,12 @@ you should use <code>find-tail</code> instead of <code>find</code>
 ==== member memq memv
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="member"></a> <code class=
-    "proc-def">member</code> <var>x list [=] -&gt; list</var></dt>
-    <dt class="proc-defi"><a name="memq"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="member"></a>
+    <code class="proc-def">member</code> <var>x list [=] -&gt;
+    list</var></dt>
+    <dt class="proc-defi proc def"><a name="memq"></a> <code class=
     "proc-def">memq</code> <var>x list -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="memv"></a> <code class=
+    <dt class="proc-defn proc def"><a name="memv"></a> <code class=
     "proc-def">memv</code> <var>x list -&gt; list</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
@@ -2539,12 +2560,12 @@ procedure <var>=</var> used to compare keys.
 ==== delete!
 ==== delete
 ============================================================================-->
-    <dt class="proc-def1"><a name="delete"></a> <code class=
-    "proc-def">delete&nbsp;&nbsp;</code><var>x list [=] -&gt;
-    list</var></dt>
-    <dt class="proc-defn"><a name="delete!"></a> <code class=
-    "proc-def">delete!&nbsp;</code><var>x list [=] -&gt;
-    list</var></dt>
+    <dt class="proc-def1 proc def"><a name="delete"></a>
+    <code class="proc-def">delete&nbsp;&nbsp;</code><var>x list [=]
+    -&gt; list</var></dt>
+    <dt class="proc-defn proc def"><a name="delete!"></a>
+    <code class="proc-def">delete!&nbsp;</code><var>x list [=]
+    -&gt; list</var></dt>
     <dd class="proc-def">
       <code>delete</code> uses the comparison procedure =, which
       defaults to <code>equal?</code>, to find all elements of
@@ -2579,13 +2600,14 @@ procedure <var>=</var> used to compare keys.
 ==== delete-duplicates
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def1"><a name="delete-duplicates"></a>
+    <dt class="proc-def1 proc def"><a name="delete-duplicates"></a>
     <code class=
     "proc-def">delete-duplicates&nbsp;&nbsp;</code><var>list [=]
     -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="delete-duplicates!"></a>
-    <code class="proc-def">delete-duplicates!&nbsp;</code><var>list
-    [=] -&gt; list</var></dt>
+    <dt class="proc-defn proc def"><a name=
+    "delete-duplicates!"></a> <code class=
+    "proc-def">delete-duplicates!&nbsp;</code><var>list [=] -&gt;
+    list</var></dt>
     <dd class="proc-def">
       <code>delete-duplicates</code> removes duplicate elements
       from the list argument. If there are multiple equal elements
@@ -2640,13 +2662,13 @@ procedure <var>=</var> used to compare keys.
     <!--
 ==== assoc assq assv
 ============================================================================-->
-    <dt class="proc-def1"><a name="assoc"></a> <code class=
-    "proc-def">assoc</code> <var>key alist [=] -&gt; pair or
-    #f</var></dt>
-    <dt class="proc-defi"><a name="assq"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="assoc"></a>
+    <code class="proc-def">assoc</code> <var>key alist [=] -&gt;
+    pair or #f</var></dt>
+    <dt class="proc-defi proc def"><a name="assq"></a> <code class=
     "proc-def">assq</code> <var>key alist -&gt; pair or
     #f</var></dt>
-    <dt class="proc-defn"><a name="assv"></a> <code class=
+    <dt class="proc-defn proc def"><a name="assv"></a> <code class=
     "proc-def">assv</code> <var>key alist -&gt; pair or
     #f</var></dt>
     <dd class="proc-def">
@@ -2695,9 +2717,9 @@ procedure <var>=</var> used to compare keys.
 ==== alist-cons
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="alist-cons"></a> <code class=
-    "proc-def">alist-cons</code> <var>key datum alist -&gt;
-    alist</var></dt>
+    <dt class="proc-def proc def"><a name="alist-cons"></a>
+    <code class="proc-def">alist-cons</code> <var>key datum alist
+    -&gt; alist</var></dt>
     <dd class="proc-def">
       <pre>
 (lambda (key datum alist) (cons (cons key datum) alist))
@@ -2706,8 +2728,9 @@ procedure <var>=</var> used to compare keys.
 ==== alist-copy
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="alist-copy"></a> <code class=
-    "proc-def">alist-copy</code> <var>alist -&gt; alist</var></dt>
+    <dt class="proc-def proc def"><a name="alist-copy"></a>
+    <code class="proc-def">alist-copy</code> <var>alist -&gt;
+    alist</var></dt>
     <dd class="proc-def">
       Make a fresh copy of <var>alist</var>. This means copying
       each pair that forms an association as well as the spine of
@@ -2719,12 +2742,12 @@ procedure <var>=</var> used to compare keys.
 ==== alist-delete
 ============================================================================-->
     </dd>
-    <dt class="proc-def1"><a name="alist-delete"></a> <code class=
-    "proc-def">alist-delete&nbsp;&nbsp;</code><var>key alist [=]
-    -&gt; alist</var></dt>
-    <dt class="proc-defn"><a name="alist-delete!"></a> <code class=
-    "proc-def">alist-delete!&nbsp;</code><var>key alist [=] -&gt;
-    alist</var></dt>
+    <dt class="proc-def1 proc def"><a name="alist-delete"></a>
+    <code class="proc-def">alist-delete&nbsp;&nbsp;</code><var>key
+    alist [=] -&gt; alist</var></dt>
+    <dt class="proc-defn proc def"><a name="alist-delete!"></a>
+    <code class="proc-def">alist-delete!&nbsp;</code><var>key alist
+    [=] -&gt; alist</var></dt>
     <dd class="proc-def">
       <code>alist-delete</code> deletes all associations from
       <var>alist</var> with the given <var>key</var>, using
@@ -2772,9 +2795,9 @@ procedure <var>=</var> used to compare keys.
     <!--
 ==== lset<=
 ============================================================================-->
-    <dt class="proc-def"><a name="lset&lt;="></a> <code class=
-    "proc-def">lset&lt;=</code> <var>= list<sub>1</sub> ... -&gt;
-    boolean</var></dt>
+    <dt class="proc-def proc def"><a name="lset&lt;="></a>
+    <code class="proc-def">lset&lt;=</code> <var>= list<sub>1</sub>
+    ... -&gt; boolean</var></dt>
     <dd class="proc-def">
       Returns true iff every <var>list<sub>i</sub></var> is a
       subset of <var>list<sub>i+1</sub></var>, using <var>=</var>
@@ -2793,7 +2816,7 @@ procedure <var>=</var> used to compare keys.
 ==== lset=
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset="></a> <code class=
+    <dt class="proc-def proc def"><a name="lset="></a> <code class=
     "proc-def">lset=</code> <var>= list<sub>1</sub>
     list<sub>2</sub> ... -&gt; boolean</var></dt>
     <dd class="proc-def">
@@ -2815,9 +2838,9 @@ procedure <var>=</var> used to compare keys.
 ==== lset-adjoin
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset-adjoin"></a> <code class=
-    "proc-def">lset-adjoin</code> <var>= list elt<sub>1</sub> ...
-    -&gt; list</var></dt>
+    <dt class="proc-def proc def"><a name="lset-adjoin"></a>
+    <code class="proc-def">lset-adjoin</code> <var>= list
+    elt<sub>1</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
       Adds the <var>elt<sub>i</sub></var> elements not already in
       the list parameter to the result list. The result shares a
@@ -2837,9 +2860,9 @@ procedure <var>=</var> used to compare keys.
 ==== lset-union
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset-union"></a> <code class=
-    "proc-def">lset-union</code> <var>= list<sub>1</sub> ... -&gt;
-    list</var></dt>
+    <dt class="proc-def proc def"><a name="lset-union"></a>
+    <code class="proc-def">lset-union</code> <var>=
+    list<sub>1</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
       Returns the union of the lists, using <var>=</var> for the
       element-equality procedure.
@@ -2876,7 +2899,7 @@ procedure <var>=</var> used to compare keys.
 ==== lset-intersection
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset-intersection"></a>
+    <dt class="proc-def proc def"><a name="lset-intersection"></a>
     <code class="proc-def">lset-intersection</code> <var>=
     list<sub>1</sub> list<sub>2</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
@@ -2918,7 +2941,7 @@ procedure <var>=</var> used to compare keys.
 ==== lset-difference
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset-difference"></a>
+    <dt class="proc-def proc def"><a name="lset-difference"></a>
     <code class="proc-def">lset-difference</code> <var>=
     list<sub>1</sub> list<sub>2</sub> ... -&gt; list</var></dt>
     <dd class="proc-def">
@@ -2955,9 +2978,9 @@ procedure <var>=</var> used to compare keys.
 ==== lset-xor
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset-xor"></a> <code class=
-    "proc-def">lset-xor</code> <var>= list<sub>1</sub> ... -&gt;
-    list</var></dt>
+    <dt class="proc-def proc def"><a name="lset-xor"></a>
+    <code class="proc-def">lset-xor</code> <var>= list<sub>1</sub>
+    ... -&gt; list</var></dt>
     <dd class="proc-def">
       Returns the exclusive-or of the sets, using <var>=</var> for
       the element-equality procedure. If there are exactly two
@@ -2998,8 +3021,9 @@ procedure <var>=</var> used to compare keys.
 ==== lset-diff+intersection
 ============================================================================-->
     </dd>
-    <dt class="proc-def"><a name="lset-diff+intersection"></a>
-    <code class="proc-def">lset-diff+intersection</code> <var>=
+    <dt class="proc-def proc def"><a name=
+    "lset-diff+intersection"></a> <code class=
+    "proc-def">lset-diff+intersection</code> <var>=
     list<sub>1</sub> list<sub>2</sub> ... -&gt; [list
     list]</var></dt>
     <dd class="proc-def">
@@ -3023,22 +3047,24 @@ procedure <var>=</var> used to compare keys.
 ==== lset-union!
 ============================================================================--></p>
     </dd>
-    <dt class="proc-def1"><a name="lset-union!"></a> <code class=
+    <dt class="proc-def1 proc def"><a name="lset-union!"></a>
+    <code class=
     "proc-def">lset-union!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><var>=
     list<sub>1</sub> ... -&gt; list</var></dt>
-    <dt class="proc-defi"><a name="lset-intersection!"></a>
-    <code class=
+    <dt class="proc-defi proc def"><a name=
+    "lset-intersection!"></a> <code class=
     "proc-def">lset-intersection!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><var>=
     list<sub>1</sub> list<sub>2</sub> ... -&gt; list</var></dt>
-    <dt class="proc-defi"><a name="lset-difference!"></a>
+    <dt class="proc-defi proc def"><a name="lset-difference!"></a>
     <code class=
     "proc-def">lset-difference!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><var>=
     list<sub>1</sub> list<sub>2</sub> ... -&gt; list</var></dt>
-    <dt class="proc-defi"><a name="lset-xor!"></a> <code class=
+    <dt class="proc-defi proc def"><a name="lset-xor!"></a>
+    <code class=
     "proc-def">lset-xor!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><var>=
     list<sub>1</sub> ... -&gt; list</var></dt>
-    <dt class="proc-defn"><a name="lset-diff+intersection!"></a>
-    <code class=
+    <dt class="proc-defn proc def"><a name=
+    "lset-diff+intersection!"></a> <code class=
     "proc-def">lset-diff+intersection!&nbsp;</code><var>=
     list<sub>1</sub> list<sub>2</sub> ... -&gt; [list
     list]</var></dt>
@@ -3058,11 +3084,11 @@ procedure <var>=</var> used to compare keys.
     <!--
 ==== set-car!
 ============================================================================-->
-    <dt class="proc-def1"><a name="set-car!"></a> <code class=
-    "proc-def">set-car!</code> <var>pair object -&gt;
+    <dt class="proc-def1 proc def"><a name="set-car!"></a>
+    <code class="proc-def">set-car!</code> <var>pair object -&gt;
     unspecified</var></dt>
-    <dt class="proc-defn"><a name="set-cdr!"></a> <code class=
-    "proc-def">set-cdr!</code> <var>pair object -&gt;
+    <dt class="proc-defn proc def"><a name="set-cdr!"></a>
+    <code class="proc-def">set-cdr!</code> <var>pair object -&gt;
     unspecified</var></dt>
     <dd class="proc-def">
       [<abbr title="Revised^5 Report on Scheme"><a href=
